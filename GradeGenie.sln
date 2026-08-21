@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GradeGenie.Api", "GradeGeni
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GradeGenie.Domain.Tests", "tests\GradeGenie.Domain.Tests\GradeGenie.Domain.Tests.csproj", "{A6D8C3FC-F1E8-4CE6-A1B6-D95C3D9C3DB2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GradeGenie.Api.Tests", "tests\GradeGenie.Api.Tests\GradeGenie.Api.Tests.csproj", "{5A0BB923-14C0-489C-B0F0-2FDC15C486F0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -38,5 +40,9 @@ Global
 		{A6D8C3FC-F1E8-4CE6-A1B6-D95C3D9C3DB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6D8C3FC-F1E8-4CE6-A1B6-D95C3D9C3DB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6D8C3FC-F1E8-4CE6-A1B6-D95C3D9C3DB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A0BB923-14C0-489C-B0F0-2FDC15C486F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A0BB923-14C0-489C-B0F0-2FDC15C486F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A0BB923-14C0-489C-B0F0-2FDC15C486F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A0BB923-14C0-489C-B0F0-2FDC15C486F0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

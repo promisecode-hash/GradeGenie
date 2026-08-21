@@ -1,0 +1,6 @@
+{
+  "GradeGenie.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\user\\Documents\\GradeGenie\\GradeGenie\\GradeGenie.Api",
+  "GradeGenie.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\user\\Documents\\GradeGenie\\GradeGenie\\GradeGenie.Application",
+  "GradeGenie.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\user\\Documents\\GradeGenie\\GradeGenie\\GradeGenie.Domain",
+  "GradeGenie.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\user\\Documents\\GradeGenie\\GradeGenie\\GradeGenie.Infrastructure"
+}

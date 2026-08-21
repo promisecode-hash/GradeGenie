@@ -19,6 +19,14 @@
 
 `POST /api/students/{studentId}/semesters/{semesterId}/insight` uses the same service and calls the Domain AI-provider port. Replacing the provider only means replacing its Infrastructure adapter and configuration.
 
+## Authentication and ownership
+
+All student routes require a valid bearer token. The API reads its subject from the standard `nameidentifier` claim (or `sub`) and passes it to the Application layer. Repository queries always include that subject in their filter; an existing student owned by another user is indistinguishable from a missing one.
+
+Set the signing key outside source control before running the API:
+
+`dotnet user-secrets set "Jwt:Key" "a-long-random-development-key-at-least-32-characters" --project GradeGenie.Api`
+
 ## Next implementation slices
 
 1. Add authenticated student ownership checks using the JWT subject (`UserId`).

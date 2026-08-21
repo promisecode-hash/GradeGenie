@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GradeGenie.Domain.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c84160509c3941ef52a1fe07b04b092a33b08869")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+68f31cbb7e3868a254fb734b73c962a19ccd6de0")]
 [assembly: System.Reflection.AssemblyProductAttribute("GradeGenie.Domain.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GradeGenie.Domain.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
