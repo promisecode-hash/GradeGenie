@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "GradeGenie.Application/1.0.0": {
+        "dependencies": {
+          "GradeGenie.Domain": "1.0.0"
+        },
+        "runtime": {
+          "GradeGenie.Application.dll": {}
+        }
+      },
+      "GradeGenie.Domain/1.0.0": {
+        "runtime": {
+          "GradeGenie.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "GradeGenie.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "GradeGenie.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
