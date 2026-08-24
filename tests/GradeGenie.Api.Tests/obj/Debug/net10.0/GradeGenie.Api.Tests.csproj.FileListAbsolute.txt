@@ -538,3 +538,7 @@ C:\Users\user\Documents\GradeGenie\GradeGenie\tests\GradeGenie.Api.Tests\bin\Deb
 C:\Users\user\Documents\GradeGenie\GradeGenie\tests\GradeGenie.Api.Tests\bin\Debug\net10.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\user\Documents\GradeGenie\GradeGenie\tests\GradeGenie.Api.Tests\bin\Debug\net10.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\user\Documents\GradeGenie\GradeGenie\tests\GradeGenie.Api.Tests\bin\Debug\net10.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\user\Documents\GradeGenie\GradeGenie\tests\GradeGenie.Api.Tests\bin\Debug\net10.0\Microsoft.OpenApi.dll
+C:\Users\user\Documents\GradeGenie\GradeGenie\tests\GradeGenie.Api.Tests\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\user\Documents\GradeGenie\GradeGenie\tests\GradeGenie.Api.Tests\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\user\Documents\GradeGenie\GradeGenie\tests\GradeGenie.Api.Tests\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
