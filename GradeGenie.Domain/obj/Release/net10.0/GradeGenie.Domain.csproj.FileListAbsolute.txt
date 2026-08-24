@@ -1,0 +1,12 @@
+C:\Users\user\Documents\GradeGenie\GradeGenie\GradeGenie.Domain\bin\Release\net10.0\GradeGenie.Domain.deps.json
+C:\Users\user\Documents\GradeGenie\GradeGenie\GradeGenie.Domain\bin\Release\net10.0\GradeGenie.Domain.dll
+C:\Users\user\Documents\GradeGenie\GradeGenie\GradeGenie.Domain\bin\Release\net10.0\GradeGenie.Domain.pdb
+C:\Users\user\Documents\GradeGenie\GradeGenie\GradeGenie.Domain\obj\Release\net10.0\GradeGenie.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Documents\GradeGenie\GradeGenie\GradeGenie.Domain\obj\Release\net10.0\GradeGenie.Domain.AssemblyInfoInputs.cache
+C:\Users\user\Documents\GradeGenie\GradeGenie\GradeGenie.Domain\obj\Release\net10.0\GradeGenie.Domain.AssemblyInfo.cs
+C:\Users\user\Documents\GradeGenie\GradeGenie\GradeGenie.Domain\obj\Release\net10.0\GradeGenie.Domain.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\GradeGenie\GradeGenie\GradeGenie.Domain\obj\Release\net10.0\GradeGenie.Domain.sourcelink.json
+C:\Users\user\Documents\GradeGenie\GradeGenie\GradeGenie.Domain\obj\Release\net10.0\GradeGenie.Domain.dll
+C:\Users\user\Documents\GradeGenie\GradeGenie\GradeGenie.Domain\obj\Release\net10.0\refint\GradeGenie.Domain.dll
+C:\Users\user\Documents\GradeGenie\GradeGenie\GradeGenie.Domain\obj\Release\net10.0\GradeGenie.Domain.pdb
+C:\Users\user\Documents\GradeGenie\GradeGenie\GradeGenie.Domain\obj\Release\net10.0\ref\GradeGenie.Domain.dll

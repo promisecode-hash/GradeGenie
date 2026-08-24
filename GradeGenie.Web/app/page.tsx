@@ -23,6 +23,11 @@ export default function Home() {
   const createStudent = (event: FormEvent) => { event.preventDefault(); run(async () => { const student = await request<Student>("/api/students", token, { method: "POST", body: JSON.stringify({ fullName: name }) }); setStudentId(student.id); setData({ studentId: student.id, fullName: student.fullName, cgpa: 0, semesters: [] }); }); };
   const addSemester = (event: FormEvent) => { event.preventDefault(); run(async () => { await request(`/api/students/${studentId}/semesters`, token, { method: "POST", body: JSON.stringify({ name: semesterName, academicYear: year }) }); setSemesterName(""); await load(); }); };
 
+  const copyStudentId = async () => {
+    if (!data?.studentId) return;
+    try { await navigator.clipboard.writeText(data.studentId); } catch { /* ignore */ }
+  };
+
   return <main>
     <header><span className="mark">G</span><div><h1>GradeGenie</h1><p>Your academic picture, in focus.</p></div></header>
     <section className="hero"><div><span className="eyebrow">CGPA PLANNER</span><h2>Turn every semester into a clearer next step.</h2><p>Save courses, track weighted GPA, and use your semester history to plan deliberately.</p></div><div className="score"><span>Current CGPA</span><strong>{data?.cgpa.toFixed(2) ?? "—"}</strong><small>out of 5.00</small></div></section>
@@ -30,6 +35,12 @@ export default function Home() {
     {error && <p className="error">{error}</p>}
     {!data ? <form className="card" onSubmit={createStudent}><h3>Start your record</h3><p>Authenticated users create one personal academic profile.</p><input value={name} onChange={e => setName(e.target.value)} placeholder="Your full name" required /><button disabled={busy || !token}>Create student profile</button></form> : <>
       <section className="section-title"><div><span className="eyebrow">{data.fullName.toUpperCase()}</span><h3>Semester history</h3></div><span>{data.semesters.length} semester{data.semesters.length === 1 ? "" : "s"}</span></section>
+      <div className="card" style={{marginTop:12, padding:12}}>
+        <div style={{display:'flex',justifyContent:'space-between',alignItems:'center'}}>
+          <div><small style={{color:'#637067'}}>Student ID</small><div style={{fontWeight:700}}>{data.studentId}</div></div>
+          <div className="copy-id"><button type="button" onClick={copyStudentId}>Copy ID</button></div>
+        </div>
+      </div>
       <div className="grid">{data.semesters.map(semester => <article className="card" key={semester.id}><div className="row"><h3>{semester.name}</h3><strong>{semester.gpa.toFixed(2)}</strong></div><p>{semester.academicYear} · {semester.totalCreditUnits} credit units</p>{semester.courses.length ? <ul>{semester.courses.map(course => <li key={course.id}><span>{course.code} · {course.title}</span><b>{course.grade}</b></li>)}</ul> : <p className="muted">No courses added yet.</p>}</article>)}</div>
       <form className="card inline" onSubmit={addSemester}><div><h3>Add a semester</h3><p>Courses can be added through the API until the next UI slice.</p></div><input value={semesterName} onChange={e => setSemesterName(e.target.value)} placeholder="e.g. First Semester" required /><input value={year} onChange={e => setYear(Number(e.target.value))} type="number" min="1900" required /><button disabled={busy}>Add semester</button></form>
     </>}

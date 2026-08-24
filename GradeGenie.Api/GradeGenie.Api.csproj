@@ -4,6 +4,7 @@
     <ProjectReference Include="..\GradeGenie.Application\GradeGenie.Application.csproj" />
     <ProjectReference Include="..\GradeGenie.Infrastructure\GradeGenie.Infrastructure.csproj" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="10.0.1" />
+      <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.1"><PrivateAssets>all</PrivateAssets></PackageReference>
   </ItemGroup>
 </Project>

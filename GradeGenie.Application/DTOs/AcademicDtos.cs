@@ -10,3 +10,4 @@ public sealed record StudentDto(Guid Id, string UserId, string FullName);
 public sealed record CreateStudentRequest(string FullName);
 public sealed record CreateSemesterRequest(string Name, int AcademicYear);
 public sealed record CreateCourseRequest(string Code, string Title, decimal CreditUnits, Grade Grade);
+public sealed record ConvertScaleRequest(decimal Value, GradeGenie.Domain.Services.GradingScale SourceScale, GradeGenie.Domain.Services.GradingScale TargetScale);

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GradeGenie.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+68f31cbb7e3868a254fb734b73c962a19ccd6de0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ace5cf6e5112e0af1ed449378d4eabefce3fb2c3")]
 [assembly: System.Reflection.AssemblyProductAttribute("GradeGenie.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GradeGenie.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

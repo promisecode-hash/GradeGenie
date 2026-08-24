@@ -1,10 +1,4 @@
 C:\Users\user\Documents\GradeGenie\GradeGenie\tests\GradeGenie.Domain.Tests\bin\Debug\net10.0\.msCoverageSourceRootsMapping_GradeGenie.Domain.Tests
-C:\Users\user\Documents\GradeGenie\GradeGenie\tests\GradeGenie.Domain.Tests\obj\Debug\net10.0\GradeGenie.Domain.Tests.csproj.AssemblyReference.cache
-C:\Users\user\Documents\GradeGenie\GradeGenie\tests\GradeGenie.Domain.Tests\obj\Debug\net10.0\GradeGenie.Domain.Tests.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\user\Documents\GradeGenie\GradeGenie\tests\GradeGenie.Domain.Tests\obj\Debug\net10.0\GradeGenie.Domain.Tests.AssemblyInfoInputs.cache
-C:\Users\user\Documents\GradeGenie\GradeGenie\tests\GradeGenie.Domain.Tests\obj\Debug\net10.0\GradeGenie.Domain.Tests.AssemblyInfo.cs
-C:\Users\user\Documents\GradeGenie\GradeGenie\tests\GradeGenie.Domain.Tests\obj\Debug\net10.0\GradeGenie.Domain.Tests.csproj.CoreCompileInputs.cache
-C:\Users\user\Documents\GradeGenie\GradeGenie\tests\GradeGenie.Domain.Tests\obj\Debug\net10.0\GradeGenie.Domain.Tests.sourcelink.json
 C:\Users\user\Documents\GradeGenie\GradeGenie\tests\GradeGenie.Domain.Tests\bin\Debug\net10.0\testhost.dll
 C:\Users\user\Documents\GradeGenie\GradeGenie\tests\GradeGenie.Domain.Tests\bin\Debug\net10.0\xunit.abstractions.dll
 C:\Users\user\Documents\GradeGenie\GradeGenie\tests\GradeGenie.Domain.Tests\bin\Debug\net10.0\testhost.exe
@@ -92,6 +86,12 @@ C:\Users\user\Documents\GradeGenie\GradeGenie\tests\GradeGenie.Domain.Tests\bin\
 C:\Users\user\Documents\GradeGenie\GradeGenie\tests\GradeGenie.Domain.Tests\bin\Debug\net10.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
 C:\Users\user\Documents\GradeGenie\GradeGenie\tests\GradeGenie.Domain.Tests\bin\Debug\net10.0\GradeGenie.Domain.dll
 C:\Users\user\Documents\GradeGenie\GradeGenie\tests\GradeGenie.Domain.Tests\bin\Debug\net10.0\GradeGenie.Domain.pdb
+C:\Users\user\Documents\GradeGenie\GradeGenie\tests\GradeGenie.Domain.Tests\obj\Debug\net10.0\GradeGenie.Domain.Tests.csproj.AssemblyReference.cache
+C:\Users\user\Documents\GradeGenie\GradeGenie\tests\GradeGenie.Domain.Tests\obj\Debug\net10.0\GradeGenie.Domain.Tests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Documents\GradeGenie\GradeGenie\tests\GradeGenie.Domain.Tests\obj\Debug\net10.0\GradeGenie.Domain.Tests.AssemblyInfoInputs.cache
+C:\Users\user\Documents\GradeGenie\GradeGenie\tests\GradeGenie.Domain.Tests\obj\Debug\net10.0\GradeGenie.Domain.Tests.AssemblyInfo.cs
+C:\Users\user\Documents\GradeGenie\GradeGenie\tests\GradeGenie.Domain.Tests\obj\Debug\net10.0\GradeGenie.Domain.Tests.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\GradeGenie\GradeGenie\tests\GradeGenie.Domain.Tests\obj\Debug\net10.0\GradeGenie.Domain.Tests.sourcelink.json
 C:\Users\user\Documents\GradeGenie\GradeGenie\tests\GradeGenie.Domain.Tests\obj\Debug\net10.0\GradeGen.4F34168D.Up2Date
 C:\Users\user\Documents\GradeGenie\GradeGenie\tests\GradeGenie.Domain.Tests\obj\Debug\net10.0\GradeGenie.Domain.Tests.dll
 C:\Users\user\Documents\GradeGenie\GradeGenie\tests\GradeGenie.Domain.Tests\obj\Debug\net10.0\refint\GradeGenie.Domain.Tests.dll

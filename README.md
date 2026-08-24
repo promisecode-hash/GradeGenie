@@ -1,2 +1,6 @@
 GradeGenie CGPA Calculator is a full-stack academic planning tool built with a React/Next.js frontend and a C#/.NET backend. Beyond basic CGPA computation from your grades and credit hours, it lets you save and track your semester history over time, convert between GPA and CGPA scales, and set target grades to see exactly what you need to hit your academic goals. An integrated AI layer analyzes your performance trends and generates personalized insights and recommendations — turning raw grade data into actual guidance on where to focus next semester.
 Full-stack CGPA calculator with semester history tracking, GPA-to-CGPA conversion, and target grade planning — powered by React/Next.js and a C#/.NET backend, with AI-generated insights to help you plan your next semester.
+
+Technical documents:
+
+- Technical Design Document: [docs/CGPA-Calculator-Converter-TDD.md](docs/CGPA-Calculator-Converter-TDD.md)

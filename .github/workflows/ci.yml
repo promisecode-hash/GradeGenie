@@ -1,0 +1,46 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  frontend:
+    name: Frontend — install & build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      - name: Install dependencies
+        working-directory: GradeGenie.Web
+        run: npm ci
+      - name: Build frontend
+        working-directory: GradeGenie.Web
+        run: npm run build
+      - name: Upload frontend build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: frontend-build
+          path: GradeGenie.Web/.next
+
+  backend:
+    name: Backend — restore, build & test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '10.0.x'
+      - name: Restore NuGet packages
+        run: dotnet restore GradeGenie.sln
+      - name: Build solution
+        run: dotnet build GradeGenie.sln --configuration Release --no-restore
+      - name: Run tests
+        run: dotnet test GradeGenie.sln --configuration Release --no-build --verbosity normal
