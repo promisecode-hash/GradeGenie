@@ -1,0 +1,15 @@
+C:\Users\user\Documents\GradeGenie\GradeGenie\tmpfakeai\bin\Debug\net10.0\tmpfakeai.exe
+C:\Users\user\Documents\GradeGenie\GradeGenie\tmpfakeai\bin\Debug\net10.0\tmpfakeai.deps.json
+C:\Users\user\Documents\GradeGenie\GradeGenie\tmpfakeai\bin\Debug\net10.0\tmpfakeai.runtimeconfig.json
+C:\Users\user\Documents\GradeGenie\GradeGenie\tmpfakeai\bin\Debug\net10.0\tmpfakeai.dll
+C:\Users\user\Documents\GradeGenie\GradeGenie\tmpfakeai\bin\Debug\net10.0\tmpfakeai.pdb
+C:\Users\user\Documents\GradeGenie\GradeGenie\tmpfakeai\obj\Debug\net10.0\tmpfakeai.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Documents\GradeGenie\GradeGenie\tmpfakeai\obj\Debug\net10.0\tmpfakeai.AssemblyInfoInputs.cache
+C:\Users\user\Documents\GradeGenie\GradeGenie\tmpfakeai\obj\Debug\net10.0\tmpfakeai.AssemblyInfo.cs
+C:\Users\user\Documents\GradeGenie\GradeGenie\tmpfakeai\obj\Debug\net10.0\tmpfakeai.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\GradeGenie\GradeGenie\tmpfakeai\obj\Debug\net10.0\tmpfakeai.sourcelink.json
+C:\Users\user\Documents\GradeGenie\GradeGenie\tmpfakeai\obj\Debug\net10.0\tmpfakeai.dll
+C:\Users\user\Documents\GradeGenie\GradeGenie\tmpfakeai\obj\Debug\net10.0\refint\tmpfakeai.dll
+C:\Users\user\Documents\GradeGenie\GradeGenie\tmpfakeai\obj\Debug\net10.0\tmpfakeai.pdb
+C:\Users\user\Documents\GradeGenie\GradeGenie\tmpfakeai\obj\Debug\net10.0\tmpfakeai.genruntimeconfig.cache
+C:\Users\user\Documents\GradeGenie\GradeGenie\tmpfakeai\obj\Debug\net10.0\ref\tmpfakeai.dll
