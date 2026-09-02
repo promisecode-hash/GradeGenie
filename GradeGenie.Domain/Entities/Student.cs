@@ -1,3 +1,5 @@
+using GradeGenie.Domain.Services;
+
 namespace GradeGenie.Domain.Entities;
 
 public enum EducationInstitutionType
