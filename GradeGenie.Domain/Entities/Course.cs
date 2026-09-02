@@ -22,4 +22,8 @@ public sealed class Course
     public Grade Grade { get; private set; }
     public decimal GradePoint => GradePointScale.GetPoint(Grade);
     public decimal QualityPoints => CreditUnits * GradePoint;
+
+    public decimal GradePointFor(EducationInstitutionType institutionType) => GradePointScale.GetPoint(Grade, institutionType);
+
+    public decimal QualityPointsFor(EducationInstitutionType institutionType) => CreditUnits * GradePointFor(institutionType);
 }

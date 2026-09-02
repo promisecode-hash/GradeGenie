@@ -1,28 +1,37 @@
 namespace GradeGenie.Domain.Entities;
 
+public enum EducationInstitutionType
+{
+    University = 0,
+    Polytechnic = 1
+}
+
 public sealed class Student
 {
-    private readonly List<Semester> _semesters = [];
+    private readonly List<Semester> _semesters = new();
     private Student() { }
 
-    public Student(string userId, string fullName)
+    public Student(string userId, string fullName, EducationInstitutionType institutionType = EducationInstitutionType.University)
     {
         if (string.IsNullOrWhiteSpace(userId)) throw new ArgumentException("User id is required.", nameof(userId));
         if (string.IsNullOrWhiteSpace(fullName)) throw new ArgumentException("Student name is required.", nameof(fullName));
         UserId = userId;
         FullName = fullName.Trim();
+        InstitutionType = institutionType;
     }
 
     public Guid Id { get; private set; } = Guid.NewGuid();
     public string UserId { get; private set; } = null!;
     public string FullName { get; private set; } = null!;
+    public EducationInstitutionType InstitutionType { get; private set; }
     public IReadOnlyCollection<Semester> Semesters => _semesters.AsReadOnly();
     public decimal Cgpa
     {
         get
         {
-            var units = _semesters.Sum(semester => semester.TotalCreditUnits);
-            return units == 0 ? 0m : decimal.Round(_semesters.Sum(semester => semester.Courses.Sum(course => course.QualityPoints)) / units, 2);
+            var courses = _semesters.SelectMany(s => s.Courses);
+            var result = CgpaCalculator.Calculate(courses, InstitutionType);
+            return result.Cgpa;
         }
     }
 
@@ -32,3 +41,4 @@ public sealed class Student
         _semesters.Add(semester);
     }
 }
+    

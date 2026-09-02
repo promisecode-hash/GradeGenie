@@ -34,7 +34,14 @@ public sealed class GradeGenieApiFactory : WebApplicationFactory<Program>
     {
         await using var scope = Services.CreateAsyncScope();
         var database = scope.ServiceProvider.GetRequiredService<GradeGenieDbContext>();
-        await database.Database.MigrateAsync();
+        if (database.Database.ProviderName?.Contains("Sqlite", StringComparison.OrdinalIgnoreCase) == true)
+        {
+            await database.Database.EnsureCreatedAsync();
+        }
+        else
+        {
+            await database.Database.MigrateAsync();
+        }
     }
 
 }

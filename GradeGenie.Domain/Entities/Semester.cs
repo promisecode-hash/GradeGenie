@@ -2,7 +2,7 @@ namespace GradeGenie.Domain.Entities;
 
 public sealed class Semester
 {
-    private readonly List<Course> _courses = [];
+    private readonly List<Course> _courses = new();
     private Semester() { }
 
     public Semester(string name, int academicYear)
@@ -20,6 +20,11 @@ public sealed class Semester
     public IReadOnlyCollection<Course> Courses => _courses.AsReadOnly();
     public decimal TotalCreditUnits => _courses.Sum(course => course.CreditUnits);
     public decimal Gpa => TotalCreditUnits == 0 ? 0m : decimal.Round(_courses.Sum(course => course.QualityPoints) / TotalCreditUnits, 2);
+
+    public decimal GpaFor(EducationInstitutionType institutionType)
+    {
+        return TotalCreditUnits == 0 ? 0m : decimal.Round(_courses.Sum(course => course.QualityPointsFor(institutionType)) / TotalCreditUnits, 2);
+    }
 
     public void AddCourse(Course course)
     {

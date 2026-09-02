@@ -54,6 +54,27 @@ public sealed class StudentsController(IStudentAcademicService academics) : Cont
         return result is null ? NotFound() : Ok(result);
     }
 
+    [HttpPost("{studentId:guid}/target-grade")]
+    [ProducesResponseType<TargetGradeResponse>(StatusCodes.Status200OK)]
+    public async Task<ActionResult<TargetGradeResponse>> CalculateTargetGrade(Guid studentId, TargetGradeRequest request, CancellationToken cancellationToken)
+    {
+        var userId = GetUserId();
+        if (userId is null) return Unauthorized();
+        var result = await academics.CalculateTargetGradeAsync(request, cancellationToken);
+        return Ok(result);
+    }
+
+    [HttpPost("{studentId:guid}/academic-plan")]
+    [ProducesResponseType<AcademicPlanResponse>(StatusCodes.Status200OK)]
+    public async Task<ActionResult<AcademicPlanResponse>> CreateAcademicPlan(Guid studentId, AcademicPlanRequest request, CancellationToken cancellationToken)
+    {
+        var userId = GetUserId();
+        if (userId is null) return Unauthorized();
+
+        var result = await academics.CreateAcademicPlanAsync(request, cancellationToken);
+        return Ok(result);
+    }
+
     [HttpPost("{studentId:guid}/semesters/{semesterId:guid}/insight")]
     [ProducesResponseType<SemesterInsightDto>(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]

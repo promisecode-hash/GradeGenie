@@ -755,6 +755,10 @@
               "target": "Package",
               "version": "[17.14.1, )"
             },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.1, )"
+            },
             "xunit": {
               "target": "Package",
               "version": "[2.9.3, )"
