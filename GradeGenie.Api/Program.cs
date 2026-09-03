@@ -53,6 +53,11 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     });
 
 builder.Services.AddAuthorization();
+// Development CORS policy to allow the Next.js dev server
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("DevCors", policy => policy.WithOrigins("http://localhost:3000").AllowAnyHeader().AllowAnyMethod());
+});
 var app = builder.Build();
 // For this project’s SQLite setup, create the database directly so local/dev/test runs
 // do not fail on pending migration validation when the model and snapshot drift.
@@ -71,6 +76,8 @@ using (var scope = app.Services.CreateScope())
 // Enable Swagger UI
 app.UseSwagger();
 app.UseSwaggerUI();
+// Enable CORS for local frontend during development
+app.UseCors("DevCors");
 
 app.UseHttpsRedirection();
 app.UseAuthentication();

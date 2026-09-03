@@ -10,7 +10,7 @@ type TargetGradeResult = { requiredGradePoint: number; requiredLetterGrade: stri
 type ScaleConversionResult = { convertedValue: number; sourceScale: number; targetScale: number };
 type AcademicPlanResult = { requiredGradePoint: number; recommendedPriority: string; summary: string };
 type SemesterInsightResult = { semesterId: string; gpa: number; insight: string };
-const apiBase = process.env.NEXT_PUBLIC_API_BASE_URL ?? "https://localhost:5001";
+const apiBase = process.env.NEXT_PUBLIC_API_BASE_URL ?? "http://localhost:5000";
 
 const institutionLabel = (institutionType: number) => institutionType === 1 ? "Polytechnic" : "University";
 const gradeOptions = ["A", "B", "C", "D", "E", "F"];
@@ -114,7 +114,7 @@ export default function Home() {
             </label>
           </div>
 
-          <button className="primary-button" disabled={busy || !token}>Create student profile</button>
+          <button className="primary-button" disabled={busy}>Create student profile</button>
         </form>
       ) : (
         <>

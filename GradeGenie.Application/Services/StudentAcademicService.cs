@@ -25,7 +25,7 @@ public sealed class StudentAcademicService(IStudentRepository students, IAcademi
         student.AddSemester(semester);
         await students.AddSemesterAsync(semester, cancellationToken);
         await students.SaveChangesAsync(cancellationToken);
-        return Map(semester);
+        return Map(semester, student.InstitutionType);
     }
 
     public async Task<CourseDto?> AddCourseAsync(string userId, Guid studentId, Guid semesterId, CreateCourseRequest request, CancellationToken cancellationToken = default)
