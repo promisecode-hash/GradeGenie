@@ -53,10 +53,10 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     });
 
 builder.Services.AddAuthorization();
-// Development CORS policy to allow the Next.js dev server
+// Development CORS policy: allow frontend dev servers to access the API
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("DevCors", policy => policy.WithOrigins("http://localhost:3000").AllowAnyHeader().AllowAnyMethod());
+    options.AddPolicy("DevCors", policy => policy.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
 });
 var app = builder.Build();
 // For this project’s SQLite setup, create the database directly so local/dev/test runs
